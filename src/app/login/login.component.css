@@ -1,0 +1,33 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 700px;
+    
+}
+
+.background{
+    background-image: url('../../assets/img/landscape.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    min-height: 94vh;
+}
+
+#section-login{
+    height: 100%;
+    width: 400px;
+    border-radius: 10px;
+    border: 2px solid blue;
+    background-color: #3f51b5a9    ;
+    padding: 10px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#section-login h2{
+    font-size: 25px;
+    background-color: rgba(240, 248, 255, 0.247);
+    border-radius: 10px;
+}
