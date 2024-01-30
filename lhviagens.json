@@ -1,0 +1,25 @@
+{
+  "produtos": [
+    {
+      "id": "1",
+      "produto": "Viagem 1",
+      "descricao": "Lorem ipsum 1",
+      "foto": "viagem1.jpg",
+      "preco": 1200
+    },
+    {
+      "id": "2",
+      "produto": "Viagem 2",
+      "descricao": "Lorem ipsum 2",
+      "foto": "viagem2.jpg",
+      "preco": 1400
+    },
+    {
+      "id": "3",
+      "produto": "Viagem 3",
+      "descricao": "Lorem ipsum 3",
+      "foto": "viagem3.jpg",
+      "preco": 800
+    }
+  ]
+}
