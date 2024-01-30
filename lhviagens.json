@@ -5,7 +5,7 @@
       "produto": "Viagem 1",
       "descricao": "Lorem ipsum 1",
       "foto": "viagem1.jpg",
-      "preco": 1200
+      "preco": 1250
     },
     {
       "id": "2",
@@ -20,6 +20,13 @@
       "descricao": "Lorem ipsum 3",
       "foto": "viagem3.jpg",
       "preco": 800
+    },
+    {
+      "id": 4,
+      "produto": "Viagem 4",
+      "descricao": "Lorem ipsum 4",
+      "foto": "viagem4.jpg",
+      "preco": 1600
     }
   ]
 }
