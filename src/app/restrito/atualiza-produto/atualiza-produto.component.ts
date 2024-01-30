@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Produto } from 'src/app/models/Produto.model';
-import { ProdutoService } from 'src/app/produto.service';
+import { Produto } from '../../models/Produto.model';
+import { ProdutoService } from '../../produto.service';
 
 @Component({
   selector: 'app-atualiza-produto',
@@ -36,7 +36,7 @@ export class AtualizaProdutoComponent implements OnInit{
       )
     }
 
-    atualizar(id: number){
+    atualizar(id: any){
       this._produtoService.atualizarProduto(id,this.produto).subscribe(
         produto => {this.produto = new Produto(0,"","","",0)},
         err => {alert("Erro ao atualizar")}

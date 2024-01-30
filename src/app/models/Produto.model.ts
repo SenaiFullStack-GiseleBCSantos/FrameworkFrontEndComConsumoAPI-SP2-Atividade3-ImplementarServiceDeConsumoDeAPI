@@ -5,7 +5,7 @@ export class Produto{
     foto: String = '';
     preco: number = 0;
 
-        constructor(id:number, produto:string, descricao:string, foto:string, preco:number){
+        constructor(id:number, produto:String, descricao:String, foto:String, preco:number){
             this.id = id;
             this.produto = produto;
             this.descricao = descricao;

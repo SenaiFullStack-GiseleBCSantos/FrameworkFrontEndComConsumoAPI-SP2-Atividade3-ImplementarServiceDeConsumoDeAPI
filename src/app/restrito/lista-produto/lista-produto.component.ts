@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { LoginService } from 'src/app/login.service';
-import { Produto } from 'src/app/models/Produto.model';
-import { ProdutoService } from 'src/app/produto.service';
+import { LoginService } from '../../login.service';
+import { Produto } from '../../models/Produto.model';
+import { ProdutoService } from '../../produto.service';
 
 @Component({
   selector: 'app-lista-produto',
@@ -39,7 +39,7 @@ export class ListaProdutoComponent implements OnInit{
     )
   }
 
-  excluir(id: number){
+  excluir(id: any){
     this._produtoService.removerProduto(id).subscribe(
       produto => {
         this.listarProdutos();

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { Produto } from 'src/app/models/Produto.model';
-import { ProdutoService } from 'src/app/produto.service';
+import { Produto } from '../../models/Produto.model';
+import { ProdutoService } from '../../produto.service';
 
 @Component({
   selector: 'app-cadastro-produto',
