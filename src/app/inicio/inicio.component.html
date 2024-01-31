@@ -32,23 +32,22 @@
   <h2>Viagems em destaque</h2>
 
   <mat-grid-list cols="3">
-    <mat-grid-tile>
+    <mat-grid-tile *ngFor="let produto of produtos">
 
       <mat-card class="example-card">
-        <img mat-card-image src="../../assets/img/viagem1.jpg" alt="Photo of a Shiba Inu">
+        <img mat-card-image src="../../assets/img/{{produto.foto}}" alt="Photo of a Shiba Inu">
 
         <mat-card-header>
-          <mat-card-title>Viagem 1</mat-card-title>
+          <mat-card-title>{{produto.produto}}</mat-card-title>
         </mat-card-header>
 
         <mat-card-content>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ab eos maiores enim rerum saepe repellat omnis
-            consequatur quibusdam deleniti necessitatibus, quas earum nam ipsa beatae impedit placeat, dolorem illum!
+          {{produto.descricao}}
           </p>
         </mat-card-content>
         <mat-card-actions>
-          <p>R$ 1.200,00</p>
+          <p>{{produto.preco | currency : 'BRL'}}</p>
           <button mat-button>COMPRAR</button>
         </mat-card-actions>
       </mat-card>
@@ -56,54 +55,7 @@
     </mat-grid-tile>
 
 
-    <mat-grid-tile>
 
-      <mat-card class="example-card">
-        <img mat-card-image src="../../assets/img/viagem2.jpg" alt="Photo of a Shiba Inu">
-
-
-        <mat-card-header>
-          <mat-card-title>Viagem 2</mat-card-title>
-        </mat-card-header>
-
-        <mat-card-content>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ab eos maiores enim rerum saepe repellat omnis
-            consequatur quibusdam deleniti necessitatibus, quas earum nam ipsa beatae impedit placeat, dolorem illum!
-          </p>
-        </mat-card-content>
-        <mat-card-actions>
-          <p>R$ 1.500,00</p>
-          <button mat-button>COMPRAR</button>
-        </mat-card-actions>
-      </mat-card>
-
-    </mat-grid-tile>
-
-
-    <mat-grid-tile>
-
-      <mat-card class="example-card">
-        <img mat-card-image src="../../assets/img/viagem3.jpg" alt="Photo of a Shiba Inu">
-
-
-        <mat-card-header>
-          <mat-card-title>Viagem 3</mat-card-title>
-        </mat-card-header>
-
-        <mat-card-content>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ab eos maiores enim rerum saepe repellat omnis
-            consequatur quibusdam deleniti necessitatibus, quas earum nam ipsa beatae impedit placeat, dolorem illum!
-          </p>
-        </mat-card-content>
-        <mat-card-actions>
-          <p>R$ 1.000,00</p>
-          <button mat-button>COMPRAR</button>
-        </mat-card-actions>
-      </mat-card>
-
-    </mat-grid-tile>
 
 
   </mat-grid-list>
