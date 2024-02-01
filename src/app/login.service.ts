@@ -10,22 +10,22 @@ export class LoginService {
 
   constructor() { }
 
+
   login(usuario:string, senha:string):void{
-    if(usuario=="aluno" && senha == "1234"){
-      localStorage.setItem('token','qwer1234');
+    if(usuario=='aluno' && senha =='1234'){
+      localStorage.setItem('token', 'qwer1234');
       this.mostraMenu.next(false);
-    }else{
-      this.mostraMenu.next(true);
-      window.location.reload();
+    }
+    else{
+      this.mostraMenu.next(true)
     }
   }
 
   setMostraMenu(valor: boolean){
-    this.mostraMenu.next(valor);
+    this.mostraMenu.next(valor)
   }
 
   getMostraMenu(){
     return this.mostraMenu.asObservable();
   }
-
 }
